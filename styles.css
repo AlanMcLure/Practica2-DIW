@@ -1,0 +1,101 @@
+body {
+    background-image: url('/assets/back.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: bold;
+}
+
+.title-container {
+    background-color: rgba(50, 139, 206, 0.3);
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20%;
+    margin-top: 100px;
+}
+
+.item {
+    height: 250px;
+    text-align: center;
+    margin: 10px;
+    background-color: rgba(73, 201, 230, 0.3);
+    border-radius: 25px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+}
+
+.item img {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.item p {
+    margin: 0;
+    margin-top: auto;
+    font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+    .item {
+        height: 150px;
+    }
+}
+
+/* Cambia la imagen de fondo para pantallas más pequeñas */
+@media (max-width: 1000px) {
+    body {
+        background-image: url('/assets/back.jpeg');
+        background-size: cover;
+        background-position: center center; /* Centra la imagen en el fondo */
+    }
+    
+    .container {
+        padding: 0 2%;
+        flex-direction: column; /* Cambia el diseño de flexbox a columna para apilar elementos en pantallas pequeñas */
+    }
+    .item {
+        flex: 0 0 100%;
+    }
+    .item img {
+        width: 80%; /* Ajusta el ancho de la imagen en pantallas pequeñas */
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url('/assets/back.jpeg');
+        background-size: cover;
+        background-position: center center; /* Centra la imagen en el fondo */
+    }
+    
+    .container {
+        padding: 0 2%;
+        flex-direction: column; /* Cambia el diseño de flexbox a columna para apilar elementos en pantallas pequeñas */
+    }
+    .item {
+        flex: 0 0 100%;
+    }
+    .item img {
+        width: 80%; /* Ajusta el ancho de la imagen en pantallas pequeñas */
+        max-width: 100%;
+    }
+}
